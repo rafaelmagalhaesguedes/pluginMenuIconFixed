@@ -1,19 +1,17 @@
 /* Estilize o container do menu lateral */
 #menu-lateral-fixo {
     position: fixed;
-    top: 50%; /* Posição vertical inicial */
-    right: 0; /* Coloque-o à direita */
-    transform: translateY(-50%); /* Centralize verticalmente */
-    padding: 20px;
+    top: 70%;
+    right: -20px;
+    transform: translateY(-50%);
     width: 100px;
     text-align: center;
-    z-index: 999; /* Para garantir que esteja sempre na frente de outros elementos */
-    transition: top 0.3s; /* Adicione uma transição suave para o efeito de rolagem */
+    z-index: 999;
+    transition: top 0.3s;
     cursor: pointer;
     background: transparent;
 }
 
-/* Estilize os ícones (você pode usar FontAwesome ou outro conjunto de ícones) */
 #menu-lateral-fixo i {
     font-size: 24px;
 }
@@ -33,8 +31,19 @@
     padding: 30px 30px;
     width: 200px;
     border-radius: 5px;
-    right: 80px; /* Posição ao lado do ícone */
-    top: 50%; /* Alinhe verticalmente */
+    right: 100px;
+    top: 50%;
     transform: translateY(-50%);
-    z-index: 1000; /* Certifique-se de que o balão esteja na frente do ícone */
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 768px) {
+    #menu-lateral-fixo {
+        top: 62%;
+        right: -20px;
+    }
+
+    .balao-texto {
+        display: none;
+    }
 }

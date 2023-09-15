@@ -2,7 +2,7 @@
 /*
 Plugin Name: Menu Lateral Fixo
 Description: Adiciona um menu de ícones fixo à lateral direita.
-Version: 1.0
+Version: 2.0
 Author: Rafael M.
 */
 
@@ -24,13 +24,12 @@ function menu_lateral_fixo_render_menu() {
     '<div id="menu-lateral-fixo">
         <a href="https://api.whatsapp.com/send/?phone=5573999883982&text=Ol%C3%A1%2C+bem+vindo+%C3%A0+Locadora+Horizonte+Rent+A+Car%2C+clique+em+iniciar+conversa+para+continuar+o+atendimento.&type=phone_number&app_absent=0" target="_blank">
             <img src="' . esc_url($zap_url) . '" alt="IconWhats" class="icon" />
-
             <div class="balao-texto">
                 <p>Chame agora no WhatsApp</p>
                 <p>Estamos prontos para atendê-lo!</p>
             </div>
         </a>
-    
+
     </div>';
 }
 add_action('wp_footer', 'menu_lateral_fixo_render_menu');
